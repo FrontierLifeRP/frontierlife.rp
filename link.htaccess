@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Ustaw katalog bazowy
+RewriteBase /home.html
+
+# Jeśli plik istnieje - użyj go normalnie
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Usuń rozszerzenie .html z adresu
+RewriteRule ^([^/]+)/?$ $1.html [L]

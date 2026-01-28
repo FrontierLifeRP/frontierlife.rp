@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontierLife Roleplay</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="logo.png" id="obrazek">
+    <div id="main">Witamy na</br>FrontierLife Roleplay!</div>
+    <div id="menu">
+        <a href="#" id="intro-btn">- Wprowadzenie do Gry -</a>
+        <a href="#" id="regulamin-btn">- Regulamin -</a>
+        <a href="#" id="lore-btn">- Lore -</a>
+        <a href="https://www.tiktok.com/@frontierliferoleplay" target="_blank">- Tiktok -</a>
+        <a href="" target="_blank">- Sklep -</a>
+        <a href="https://discord.gg/bXz6gUeYFq" target="_blank">- Discord -</a>
+    </div>
+
+
+
+<!-- wprowadzenie -->
+<div id="intro-panel" class="panel">
+    <div class="panel-content">
+        <p style="color: #ffcc66; text-align: center; font-family: 'Rye', serif; text-decoration: none; font-size: 75px;">Wprowadzenie do Gry - Frakcje</p>
+        <p style="font-size: 16px;">Kliknij nagłówek aby rozwinąć opis:</p>
+        <hr>
+
+        <p class="tytul">Droga do bycia szeryfem</p>
+        <p class="opis">
+          1. Aby dołączyć w struktury LEA (sheriff,marshall) należy wejść na główny discord serwera.</br>
+          2. W kategorii "SERWER" znaleźć kanał "discordy".</br>
+          3. Na samym dole kategorii wybrać discord "Sheriff Office" i dołączyć.</br>
+          4. Po dołączeniu znaleźć kategorię "PODANIA" i utworzyć ticket.</br>
+          5. Dalej postępować według wzoru.
+      </p>
+        <hr>
+
+        <p class="tytul">Droga do bycia medykiem</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Droga do bycia członkiem Armii</p>
+        <p class="opis">
+          1. Aby dołączyć w struktury 3rd Cavalery Regiment, należy wejść na główny discord serwera.</br>
+          2. W kategorii "SERWER" znaleźć kanał "discordy".</br>
+          3. Na samym dole kategorii wybrać discord "Wojsko" i dołączyć.</br>
+          4. Po dołączeniu znaleźć kategorię "KONTAKT" i utworzyć ticket.</br>
+          5. Dalej postępować według wzoru.
+      </p>
+        <hr>
+
+        <p style="color: #ffcc66; text-align: center; font-family: 'Rye', serif; text-decoration: none; font-size: 75px;">Wprowadzenie do Gry - Prace</br>(Wymagane podanie!)</p>
+        <p style="font-size: 16px;">Kliknij nagłówek aby rozwinąć opis:</p>
+        <hr>
+
+        <p class="tytul">Rusznikarz</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Stajenny</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Hodowla Bydła</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Farmer</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Kolejarz</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p style="color: #ffcc66; text-align: center; font-family: 'Rye', serif; text-decoration: none; font-size: 75px;">Wprowadzenie do Gry - Prace otwarte</p>
+        <p style="font-size: 16px;">Kliknij nagłówek aby rozwinąć opis:</p>
+        <hr>
+
+        <p class="tytul">Rybak</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Zielarz</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Łowca</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Górnik</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p class="tytul">Prace Dorywcze w miastach</p>
+        <p class="opis">
+      </p>
+        <hr>
+
+        <p style="color: #ffcc66; text-align: center; font-family: 'Rye', serif; text-decoration: none; font-size: 75px;">Wprowadzenie do Gry - Crime</p>
+        <p style="font-size: 16px;">Kliknij nagłówek aby rozwinąć opis:</p>
+        <hr>
+
+        <p class="tytul">Tworzenie Bandy</p>
+        <p class="opis">
+      </p>
+        <hr>
+        <span class="close-btn">&times;</span>
+    </div>
+</div>
+
+<script>
+    const tytuly = document.querySelectorAll('.tytul');
+
+    tytuly.forEach(tytul => {
+        tytul.addEventListener('click', () => {
+            const opis = tytul.nextElementSibling;
+            opis.classList.toggle('active');
+        });
+    });
+</script>
+
+
+    
+  <!-- REGULAMIN -->
+  <div id="side-panel" class="side-panel">
+        <div class="panel-content">
+            <span id="close-panel" class="close-btn">&times;</span>
+            <h2>Regulamin</h2>
+            <p id="punkty">
+
+
+<p id="nagłówki">§1. Zasady Ogólne<br></br></p>
+1.1. Każdy gracz, podejmując się rozgrywki na serwerze HeartLand Roleplay, akceptuje poniższy regulamin oraz ma obowiązek bycia na bieżąco z jego treścią.</br>
+1.2. Od każdego gracza wymagane jest członkostwo na serwerze Discord HeartLand Roleplay:</br>
+• Gracze należący do frakcji, crime, plemienia lub prowadzący biznes zobowiązani są do dołączenia na odpowiedni serwer Discord (Frakcje, Crime, Biznesy).</br>
+• Podejmując się rozgrywki w danej organizacji, gracz zobowiązany jest przestrzegać wytycznych udostępnianych przez administrację na powyższych serwerach Discord.</br>
+1.3. Do prowadzenia rozgrywki wymagana jest odpowiednia jakość dźwięku, wolna od szumów tła. Inne metody komunikacji muszą zostać zatwierdzone przez administrację przed utworzeniem postaci.</br>
+1.4. Jakiekolwiek przejawy ataków personalnych, toksycznych zachowań i wulgaryzmów na serwerach HeartLand Roleplay są kategorycznie zabronione.</br>
+1.5. Czat OOC służy wyłącznie do:</br>
+• przekazywania informacji, których nie możemy przekazać w grze,</br>
+• zgłaszania problemów oraz błędów technicznych podczas rozgrywki.</br>
+1.6. Komenda /report służy do zgłaszania błędów oraz potrzeb. Zabronione jest jej używanie w celu uzyskania revive.</br>
+1.7. Zakazane jest przesiadywanie na streamach z rozgrywki innych graczy oraz na komunikatorach głosowych w tym celu.</br>
+1.8. Wykorzystywanie błędów skryptowych, błędów gry, exploitów, cheatów, makro i innych zewnętrznych oprogramowań jest zabronione i skutkuje permanentną blokadą.</br>
+• W przypadku wykrycia takiego błędu należy niezwłocznie powiadomić administrację za pomocą ticketu.</br>
+1.9. Nick Discord musi być taki sam jak nick w grze (Steam).</br>
+1.10. Administracja może uchylić zasady regulaminu na potrzeby zaplanowanych i zatwierdzonych przez nią akcji fabularnych.</br>
+1.11. Wszelkie decyzje dotyczące skarg i banów są podejmowane przez administrację i są ostateczne.</br>
+1.12. Komunikacja pomiędzy administracją a społecznością w sprawach skarg jest poufna.</br>
+• Administracja może ujawnić szczegóły postępowania administracyjnego w przypadku złamania tej zasady poufności przez osobę ukaraną.</br>
+1.13. Na serwerze obowiązuje przestrzeganie zasad streamingu, w tym bezwzględny zakaz używania określeń takich jak n-word, p-word, c-word i podobnych.</br>
+1.14. Choć akcja rozgrywa się w roku 1900 w Ameryce, historia serwera nie jest bezpośrednio powiązana z historią tego kraju.</br>
+• Odgrywanie ról lub nawiązywanie do wydarzeń historycznych takich jak „Szlak łez”, niewolnictwo, rewolucja amerykańska, wojna domowa, brak praw kobiet itp. jest zabronione.</br>
+
+<p id="nagłówki">§2. Zasady Rozgrywki IC<br></br></p>
+2.1. IC (In Character) – rzeczywistość, w której funkcjonuje wykreowana przez nas postać i jej historia.</br>
+2.2. OOC (Out of Character) – wszelkie działania i treści odnoszące się do realnego świata, niezwiązane z odgrywaniem roli.</br>
+2.3. BW (Brutally Wounded) – stan ciężkiego zranienia, w którym postać traci zdolność poruszania się.</br>
+2.4. CL (Combat Logging) – opuszczenie serwera podczas trwającej akcji RP lub tuż przed jej konsekwencjami, aby uniknąć odpowiedzialności.</br>
+2.5. Metazwroty – komunikaty wykorzystywane w grze w celu opisania zjawisk OOC, np. nazywanie braku aktywności „zamyśleniem się”, tłumaczenie niedziałającego mikrofonu „chrypką” albo określanie restartu serwera „zaćmieniem”.</br>
+2.6. FearRP – obowiązek realistycznego reagowania postaci na zagrożenia i stawiania zdrowia oraz życia swojego i innych ponad wszystko. Nieprzestrzeganie tej zasady może skutkować trwałym okaleczeniem postaci lub natychmiastowym FCK – jeśli administracja wyrazi na to zgodę.</br>
+2.7. MG (Metagaming) – wykorzystywanie informacji zdobytych poza światem gry (OOC) w rozgrywce (IC) w celu zmiany decyzji lub zachowań postaci.</br>
+2.8. PG (Power Gaming) – narzucanie innym graczom przebiegu akcji bez możliwości reakcji z ich strony oraz prowadzenie scenariusza wyłącznie dla własnej korzyści.</br>
+2.9. Wyjście z roli – specyficzna forma FailRP obejmująca m.in. niespójne działania postaci, używanie metazwrotów czy błędne zastosowanie czatu OOC.</br>
+2.10. Loot RP – przejmowanie przedmiotów z ekwipunku innych graczy bez odgrywania odpowiedniej sceny lub seryjne kradzieże bez rozwijania fabuły. Całość przeszukania musi zostać odegrana komendami narracyjnymi /me i /do, w przeciwnym razie może to zostać potraktowane jako Loot RP.</br>
+2.11. Cop Baiting – prowokowanie funkcjonariuszy prawa w celu wzbudzenia ich reakcji i rozpoczęcia interakcji RP.</br>
+2.12. RK (Revenge Kill) – powracanie po reanimacji lub leczeniu do osoby odpowiedzialnej za zgon w celu odwetu.</br>
+2.13. RDM (Random Deathmatch) – atakowanie innych graczy lub NPC bez fabularnego uzasadnienia.</br>
+2.14. FailRP – prowadzenie rozgrywki w sposób nielogiczny, nieprawdziwy lub niewykonalny dla postaci.</br>
+2.15. CK (Character Kill) – trwałe uśmiercenie własnej postaci, którego nie można cofnąć.</br>
+2.16. FCK (Force Character Kill) – ostateczne zabicie postaci innego gracza.</br>
+2.17. CN (Celebrity Name) – tworzenie postaci o personaliach znanej osoby rzeczywistej lub fikcyjnej.</br>
+2.18. Immersja – pełne wczucie się w rolę postaci oraz świat gry.</br>
+2.19. WMG – wykorzystywanie mechaniki gry w sposób nieuczciwy, np. wielokrotne przywoływanie konia w celu bezpiecznego przenoszenia kontrabandy.</br>
+
+<p id="nagłówki">§3. Zasady Rozgrywki IC – Dodatkowe<br></br></p>
+3.1. Loot RP – przejmowanie przedmiotów z ekwipunku innych graczy bez odgrywania odpowiedniej sceny lub dokonywanie seryjnych kradzieży, które nie prowadzą do rozwoju fabuły ani nie pozwalają poszkodowanym dochodzić sprawiedliwości (również w relacji z organami ścigania).</br>
+3.2. Cop Baiting – prowokowanie funkcjonariuszy prawa w sposób nieuzasadniony, w celu wzbudzenia ich reakcji i rozpoczęcia interakcji RP.</br>
+3.3. RK (Revenge Kill) – powracanie po reanimacji lub leczeniu do osoby odpowiedzialnej za zgon w celu odwetu poprzez zabójstwo lub pobicie.</br>
+3.4. RDM (Random Deathmatch) – atakowanie innych graczy lub postaci niezależnych bez fabularnej motywacji i uzasadnienia.</br>
+3.5. FailRP – prowadzenie rozgrywki w sposób nielogiczny, nieprawdziwy lub niewykonalny dla postaci oraz celowe unikanie udziału w odgrywaniu scen.</br>
+3.6. CK (Character Kill) – trwałe uśmiercenie własnej postaci, którego nie można cofnąć.</br>
+3.7. FCK (Force Character Kill) – ostateczne zabicie postaci innego gracza.</br>
+3.8. CN (Celebrity Name) – tworzenie postaci o personaliach znanej osoby rzeczywistej lub fikcyjnej, np. Dutch van der Linde, Wyatt Earp.</br>
+3.9. Immersja – pełne wczucie się w rolę postaci oraz świat gry; przykładowo fakt, że nie widać innych graczy czy NPC, nie oznacza, że można działać bez ograniczeń.</br>
+3.10. WMG (Wykorzystywanie mechaniki gry) – celowe nadużywanie luk w systemie lub błędów gry w celu uzyskania nieuczciwej przewagi.</br>
+3.11. Miasto Duchów – określenie oznaczające fabularny zakaz porywania i przeprowadzania brutalnych akcji w ścisłym centrum miasta w obecności dużej liczby świadków (gapiów, NPC,</br>
+graczy). Zasada ta ma na celu zachowanie realizmu rozgrywki – w miejscach publicznych i zatłoczonych działania przestępcze powinny być ograniczone lub odpowiednio ukryte.</br>
+
+<p id="nagłówki">§4. Zasady Rozgrywki IC – Świat i Realizm<br></br></p>
+4.1. Wydarzenia na serwerze toczą się w fikcyjnym stanie HeartLand w Stanach Zjednoczonych, w schyłkowym okresie Dzikiego Zachodu (rok 1900). Gracze są zobowiązani do odgrywania postaci w zgodzie z realiami epoki.</br>
+4.2. Każde użycie lassa traktowane jest jako czynność ostateczna. Nadmierne wykorzystywanie tej mechaniki jest uznawane za PG.</br>
+• Można rzucać raz na 30 sekund.</br>
+• Podczas pościgu konnego – raz na całą akcję.</br>
+4.3. Samodzielne uwalnianie się z lassa w obecności napastników jest traktowane jako brak poszanowania życia.</br>
+4.4. Zabronione jest nawiązywanie do polskiej historii, kultury i symboliki (Wyjątek stanowi odgrywanie postaci pochodzącej z Polski).</br>
+4.5. Po zgłoszeniu wezwania ratunkowego komendą /calldoctor, należy odczekać minimum 10 minut od momentu potwierdzenia przyjęcia zgłoszenia, aby medyk miał czas dotrzeć.</br>
+4.6. W przypadku opuszczenia gry z powodu błędu technicznego należy opublikować dowód (np. zrzut ekranu) na kanale #crashe z widoczną datą i treścią komunikatu błędu.</br>
+4.7. Broń w grze powinna być traktowana jako realne zagrożenie życia, a jej użycie musi być ostatecznością.</br>
+4.8. Osoby korzystające z balonów nie mogą lądować w centrum miast ani poruszać się nad dachami budynków.</br>
+4.9. Własnoręczne wykonywanie muzyki oraz wykorzystywanie jej w rozgrywce jest dopuszczalne, o ile nie wykracza poza realia historyczne.</br>
+4.10. Zakazuje się podszywania pod służby mundurowe oraz tworzenia grup o podobnym charakterze bez zgody administracji.</br>
+4.11. Inicjowanie wydarzeń wykraczających poza zwykłą przemoc (np. tortury, akty erotyczne, przemoc seksualna, nadawanie ran trwałych, molestowanie) wymaga obustronnej zgody OOC oraz wcześniejszego ustalenia poziomu szczegółowości opisów.</br>
+4.12. Gdy gracz musi odejść od komputera, powinien wyjść z gry lub pozostawić postać w miejscu neutralnym.</br>
+4.13. Administracja może wprowadzić wytyczne wobec grupy lub organizacji w celu utrzymania płynności rozgrywki i zasad fair play.</br>
+4.14. Zakazuje się podejmowania wrogich działań wobec innych postaci podczas wydarzeń zbiorowych bez fabularnego uzasadnienia.</br>
+4.15. Zakazuje się przeszkadzania w trakcie wykonywania prac legalnych (rusznikarze, stajenni, lekarze itp.)</br>
+
+<p id="nagłówki">§5. Postacie i Prowadzenie Ich<br></br></p>
+5.1. Każda postać musi być wiarygodna, spójna oraz zgodna z realiami XIX wieku.</br>
+5.2. Zakazane jest tworzenie postaci opartej wyłącznie na nienawiści rasowej, homofobii, seksizmie lub ksenofobii.</br>
+5.3. Postać powinna mieć ukończone 18 lat w uniwersum gry.</br>
+5.4. Zakazane jest posiadanie dwóch postaci jednocześnie działających w tej samej grupie.</br>
+• a) Odwoływanie się do historii śmierci postaci z innych serwerów jest zabronione.</br>
+5.5. Granie postaci chorej psychicznie jest możliwe tylko za zgodą administracji.</br>
+5.6. Po stanie BW należy odczekać minimum 30 minut przed podjęciem kolejnych działań hostylnych.</br>
+• W tym czasie postać nie pamięta wydarzeń z ostatnich 30 minut.</br>
+5.7. Aby prowadzić równolegle postać po stronie prawa i przestępczości, wymagana jest zgoda administracji.</br>
+5.8. Po CK i FCK zakazuje się tworzenia osoby spokrewnionej z poprzednią postacią, a także powrotu na te same posady itp., chyba że rozgrywka IC do tego doprowadzi.</br>
+
+<p id="nagłówki">§6. Akcje Hostylne<br></br></p>
+6.1. Akcję wrogą należy rozpocząć jawnym kontaktem werbalnym, dając około 5 sekund na reakcję</br>
+drugiej strony. (Do akcji hostylnych zaliczamy także zatrzymania prowadzone przez szeryfów)</br>
+6.2. W akcji hostylnej maksymalnie 7 osób może występować po stronie inicjującej.</br>
+6.3. Obrona w sytuacji 1 vs 2 jest dopuszczalna pod warunkiem, że gracz jest zwrócony przodem do agresorów i wyciąga broń z kabury.</br>
+6.4. Ograniczenia liczebności graczy przy akcjach:</br>
+• Napad na bank: 7 napastników vs 9 stróżów prawa</br>
+• Napad na sklep: 1–2 napastników vs 2–3 stróżów prawa</br>
+• Jeśli stróże prawa nie pojawią się w ciągu 10 minut, napastnicy mogą odejść.</br>
+6.5. Nie wolno rozpoznawać zamaskowanych osób po głosie, jeśli ta osoba zmieniła choć odrobinę głos. Napastników można także rozpoznać przez 40 minut, jeśli ci nie zmienili swojego stroju. (Całego stroju)</br>
+6.6. Dołączenie do trwającej akcji hostylnej jest zabronione (wyjątek – stróże prawa).</br>
+6.7. Wkraczanie w trwającą akcję hostylną pomiędzy dwiema stronami będzie traktowane jako „wjazd na trzeciego”.</br>
+6.8. Nie wolno wzywać medyków w trakcie akcji hostylnej.</br>
+6.9. W przypadku problemów technicznych uniemożliwiających wykonanie akcji należy odgrywać konsekwencje.</br>
+6.10. /callsheriff można używać tylko w miejscach często odwiedzanych przez NPC.</br>
+6.11. Maksymalna liczba członków w jednej ekipie: 20 osób.</br>
+6.12. W akcji hostylnej maksymalnie 12 osób może występować po stronie broniącej (zależnie od sytuacji).</br>
+6.13. /try można użyć dwa razy na akcje (na osobę).</br>
+
+<p id="nagłówki">§7. Rabunki, Porwania i Kradzieże<br></br></p>
+7.1. Każdy rabunek musi być logicznie umotywowany fabularnie – napastnik powinien umożliwić identyfikację swojej postaci poprzez elementy wyglądu, styl mówienia czy ekwipunku.</br>
+7.2. Ograniczenia łupów:</br>
+• Kradzież gotówki – maksymalnie 50%, ale nie więcej niż 400$.</br>
+• Kradzież przedmiotów – maksymalnie połowa stanu.</br>
+• Kontrabanda – może być zabrana w całości.</br>
+• Kradzież broni – co najmniej jedna sztuka musi pozostać w ekwipunku ofiary.</br>
+7.3. Związanie gracza bez opisu narracyjnego możliwe jest jedynie, gdy postać trzyma ręce w górze. (Wyjątek stanowią Szeryfowie podczas ucieczki podejrzanego)</br>
+7.4. Nie wolno zmuszać graczy do opróżniania skrytek skryptowych (banki, domy, skrzynie, obozy).</br>
+7.5. Porwania funkcjonariuszy i medyków muszą mieć istotne tło fabularne i nie mogą blokować pracy frakcji.</br>
+7.6. Korumpowanie urzędników i służb państwowych wymaga zgody administracji (poza burmistrzem lub zarządem frakcji).</br>
+7.7. Powrót do tej samej grupy przestępczej na nowej postaci po FCK jest zakazany, chyba że rozgrywka IC do tego prowadzi.</br>
+7.8. Po zerwaniu negocjacji należy zapewnić obu stronom minimum 10 sekund na reakcję.</br>
+7.9. Porwania i tortury mogą trwać maksymalnie 40 minut.</br>
+
+<p id="nagłówki">§8. Bandy i Przedsiębiorstwa<br></br></p>
+8.1. Grupy przestępcze liczące ponad 5 członków muszą być zgłoszone administracji poprzez ticket crime o założenie bandy.</br>
+8.2. Liderzy odpowiadają za działania członków organizacji.</br>
+8.3. Haracze mogą być pobierane raz na tydzień z maksymalnie dwóch firm/frakcji – do łącznej kwoty 150$ (za zgodą administracji oraz po opisaniu akcji fabularnej).</br>
+8.4. Zmiana lidera bądź właściciela wymaga fabularnego uzasadnienia i zgłoszenia administracji.</br>
+8.5. Pracownikom zabrania się okradania skrytek firm i organizacji legalnych.</br>
+
+<p id="nagłówki">§9. Więzienie Sisika<br></br></p>
+9.1. Sisika to więzienie o najwyższym rygorze – gracze powinni odgrywać odpowiednią atmosferę.</br>
+9.2. Każda ucieczka musi być nadzorowana przez administrację lub nagrana.</br>
+
+<p id="nagłówki">§10. Indianie i Rezerwaty<br></br></p>
+10.1. Rdzenni mieszkańcy zamieszkują Rezerwaty Achomawi oraz Wapiti.</br>
+10.2. Ich prawa obowiązują wszystkich graczy odwiedzających rezerwaty.</br>
+10.3. W razie pogwałcenia tych zasad grozi uwięzienie lub FCK.</br>
+
+<p id="nagłówki">§11. Obszar Guarma<br></br></p>
+11.1. Każde rozpoczęcie działań wrogo nastawionych musi zostać poprzedzone strzałem ostrzegawczym oddanym w powietrze.</br>
+11.2. Podczas grabieży gracza na terenie Guarmy nie obowiązuje ograniczenie ilości przejętych przedmiotów.</br>
+11.3. Osoby udające się na Guarmę powinny być świadome ryzyka – możliwy jest długotrwały pobyt lub brak możliwości powrotu (FCK).</br>
+
+11.4. Dotarcie na wyspę możliwe jest wyłącznie przy użyciu specjalnego systemu transportowego.</br>
+• Korzystanie z alternatywnych metod (np. konie, balony) jest uznawane za nieprawidłowe wykorzystanie mechaniki gry.</br>
+11.5. Porwania w celu niewolnictwa można jedynie wykonywać w Saint Denis, Van Horn i AnnesBurg.</br>
+11.6. Przetrzymywanie na Guarmie nie może trwać dłużej niż pół godziny, jednakże za zgodą obopólną graczy (osoby porywanej i porywacza) czas ten może się toczyć do ustalonego wspólnie limitu.</br>
+11.7. Na Guarmie obowiązuje zakaz Spawn Killa na molo (miejsce w którym jest teleport), jednakże próba ucieczki, po zauważeniu zagrożenia / inicjacji akcji, za pomocą Teleportu powrotnego będzie traktowana jako unikanie akcji.</br>
+
+
+
+            </p>
+            
+            <h2 style="margin-top: 290px"> Kliknij "ESC" aby zamknąć. </h2>
+        </div>
+    </div>
+
+
+
+  <!-- LORE -->
+  <div id="lore-panel" class="side-panel">
+  <div class="panel-content">
+    <span id="close-lore" class="close-btn">&times;</span>
+    <h2>Miasta</h2>
+
+    <button class="city-btn">ARMADILLO</button>
+    <div class="city-desc">Armadillo – od miasta widma do meksykańskiego feniksa.</br></br>
+Armadillo jeszcze nie dawno niemal przestało istnieć. Straszliwa epidemia pustoszyła ulice, a ci, którzy przeżyli, uciekli w głąb lądu lub porzucili swoje domy. Miasto wyglądało jak cmentarz – porzucone wozy, zrujnowane budynki, cisza przerywana tylko przez wiatr i krakanie kruków. Jednak w roku 1900 wydarzyło się coś, co odmieniło oblicze tej krainy. Na zachód dotarli Meksykanie – handlarze, rzemieślnicy, robotnicy i całe rodziny, które postanowiły osiedlić się na zgliszczach Armadillo. Niektórzy byli potomkami dawnych mieszkańców północnego Meksyku, inni uciekali przed biedą i konfliktami, jakie targały ich ojczyzną. Pod ich rękami miasto zaczęło powstawać na nowo – ale już nie jako kopia dawnych osad pogranicza, lecz jako miasto z duszą meksykańską. Wznoszono nowe domy w adobe, place ozdabiano kolorowymi tkaninami, a na ulicach rozbrzmiewała muzyka. Dawny saloon zamieniono w głośną cantinę, a rynek wypełniły stragany z przyprawami i owocami sprowadzanymi z południa. Armadillo, jeszcze niedawno przeklęte, zaczęło tętnić życiem – stało się punktem spotkań handlarzy, podróżników i rewolwerowców. Meksykańska kultura nadała mu barwy i ciepło, jakich brakowało w surowym klimacie pogranicza. Ale ta przemiana nie obyła się bez konfliktów – niektórzy dawni mieszkańcy, którzy wrócili po latach, patrzyli z niechęcią na nowych osadników, a Amerykańskie władze z niepokojem śledziły wzrastające wpływy południowych sąsiadów. W roku 1900 Armadillo stało się jednak symbolem odrodzenia – feniksem, który powstał z popiołów zarazy, łącząc w sobie dziedzictwo pogranicza i energię nowego życia wniesioną przez Meksykanów. 
+</div>
+
+    <button class="city-btn">BLACKWATER</button>
+    <div class="city-desc">Blackwater – miasto przyszłości.</br></br>
+Blackwater wyrastało na symbol nowej Ameryki. W 1900 roku ulice tętniły gwarem, gazowe latarnie rozświetlały noc. Dla wielu było to miejsce marzeń – bogaci kupcy inwestowali w handel rzeczny i przemysł, a młodzi ludzie wierzyli, że właśnie tu mogą zacząć nowe życie. Ale Blackwater miało też swoje cienie – rosnące nierówności, biedne dzielnice zamieszkiwane przez przybyszy, oraz wspomnienia krwawych wydarzeń sprzed kilku lat, gdy gangi i bandyci rzuciły wyzwanie rodzącemu się „cywilizowanemu” światu. Do dawnych traum dochodziły też nowe napięcia – w 1900 roku mieszkańcy Blackwater coraz otwarciej wyrażali niechęć wobec ludzi z Valentine. Uważano ich za dzikich ranczerów i pijanych awanturników, którzy stoją na drodze postępowi i marzeniom o nowoczesnej przyszłości. Niechęć ta szybko przeradzała się w otwarte spory, które groziły rozpaleniem dawno wygasłych płomieni przemocy. 
+</div>
+
+    <button class="city-btn">COLTER</button>
+    <div class="city-desc">Colter – Serce skute lodem.</br></br>
+W wysokich, skutej lodem górach północy leży Colter – dawna osada, która w 1900 roku była już tylko cieniem ludzkich marzeń. Drewniane chaty, przytulone do zboczy, stały opuszczone, skrzypiące na wietrze, a zaspy śniegu zakrywały dawne ścieżki i drogi... A przynajmniej tak mówili dotychczas ludzie. Krązą pogłoski, że teraz mieszkają tam dawniej bardzo sławni bandyci, którzy uciekli od jakiejkolwiek cywilizacji żeby odsapnąć od ciągłych strzelanin, bójek i kradzieży. Przecież każdy, nawet najbrutalniejszy z bandytów potrzebuje chwili spokoju... Prawda? Nikt nie wie czy te plotki są prawdziwe, ponieważ jest niewiele śmiałków, którzy mają na tyle odwagi by wyruszyć w tak srogą podróż do tej zimnej krainy ale kto wie? Może kiedyś znajdzie się parę odważnych by potwierdzić tą historię... 
+</div>
+
+    <button class="city-btn">STRAWBERRY</button>
+    <div class="city-desc">Strawberry – zielony azyl.</br></br>
+Strawberry, choć niewielkie, wyróżniało się malowniczym położeniem. Drewniane domy otoczone górami i lasami sprawiały, że miasteczko miało niemal bajkowy urok. W 1900 roku przyciągało turystów i wędrowców szukających wytchnienia od zgiełku wielkich miast. Mówiono, że Strawberry to miasto relaksu – ludzie przyjeżdżali tu, by pooddychać świeżym, górskim powietrzem i odpocząć od dymu i hałasu Saint Denis czy Blackwater. Goście zatrzymywali się w niewielkich gospodach, chodzili na długie spacery leśnymi ścieżkami i podziwiali piękno dzikiej przyrody. Jednak nie wszyscy patrzyli na Strawberry jak na spokojny raj – bogaci inwestorzy chcieli uczynić z niego górskie uzdrowisko, podczas gdy lokalni mieszkańcy obawiali się, że stracą swój skromny, lecz wolny sposób życia. W cieniu zielonych wzgórz toczyła się więc cicha walka o to, czy Strawberry pozostanie małym miasteczkiem, czy stanie się kolejnym symbolem cywilizacji i chciwości. 
+</div>
+
+    <button class="city-btn">SAINT DENIS</button>
+    <div class="city-desc">Saint Denis – brama na świat.</br></br>
+Saint Denis wciąż pozostawało największym, najbardziej kosmopolitycznym miastem regionu. Port był zatłoczony statkami, które przywoziły towary z Europy i Karaibów, a ulice wypełniały wozy pełne robotników i dorożki bogaczy. Dźwięki języków z całego świata mieszały się w hałasie tego tętniącego życiem miejsca. Choć z zewnątrz Saint Denis wydawało się symbolem nowoczesności, w rzeczywistości miasto było kontrolowane z cienia przez mafię. Organizacje przestępcze, powiązane z dokami, saloonami i hazardem, decydowały o tym, kto mógł prowadzić interes, a kto znikał bez śladu. Kupcy i politycy często byli tylko marionetkami w rękach bossów, którzy nigdy nie pokazali się publicznie, ale których wpływy sięgały od portu aż po najwyższe piętra ratusza.W ciasnych, ciemnych uliczkach miasta kwitł nielegalny handel – od przemycanych trunków i opium, po broń i egzotyczne towary, które nigdy nie trafiały na oficjalne rejestry portowe. W roku 1900 Saint Denis było więc zarówno oknem Ameryki na świat, jak i mrocznym labiryntem intryg, gdzie każdy krok mógł sprowadzić na człowieka zgubę. 
+</div>
+
+    <button class="city-btn">VALENTINE</button>
+    <div class="city-desc">Valentine – brudne serce stanu.</br></br>
+Valentine było surowym miasteczkiem pogranicza. Tu, w 1900 roku, codzienność wciąż pachniała sianem, potem i alkoholem. Farmerzy i hodowcy bydła przyjeżdżali tu sprzedawać swoje towary, a kowboje przepijali zarobek w dusznych saloonach. Miasto było znane z bójek i awantur – szeryf miał pełne ręce roboty, a każdy, kto chciał tam prowadzić interes, musiał liczyć się z tym, że prędzej czy później ktoś wpadnie do jego drzwi z rewolwerem u boku. Mieszkańcy Valentine darzyli też wyraźną niechęcią ludzi z Blackwater, których uważali za zadufanych mieszczuchów, chcących wykupić ich ziemię i zniszczyć stary, kowbojski porządek. W saloonach często słychać było, że „Blackwater sprzedaje duszę za pieniądze, a Valentine wciąż walczy o swoją wolność”. Mimo chaosu i biedy, Valentine przyciągało ludzi – jako miejsce, gdzie można było spróbować szczęścia, choć ryzykowało się wszystko. 
+</div>
+
+    <button class="city-btn">TUMBLEWEED</button>
+    <div class="city-desc">Tumbleweed – zapomniane miasto na nowo odkryte.</br></br>
+Na dalekim zachodzie, w skąpanym słońcem i pyłem regionie New Austin, Tumbleweed przez lata uchodziło za miasteczko zapomniane przez świat. Choć niegdyś tętniło handlem i kowbojskim życiem, z czasem coraz więcej ludzi przenosiło się do sąsiednich osad, a Tumbleweed traciło znaczenie. Jednak w roku 1900 na jego ulice zajechali Meksykanie – kupcy, rzemieślnicy i rodziny, które szukały nowego początku. Z pustych budynków zaczęły rodzić się tawerny, sklepy i warsztaty. Dawny, zaniedbany rynek rozbrzmiał gwarem, a w powietrzu czuć było zapach przypraw i pieczonej kukurydzy. Pod ich rękami Tumbleweed odżyło – stało się miejscem, gdzie kultura pogranicza spotykała się z żywiołowością Meksyku. Uliczkami niesiono muzykę gitar i trąbek, a nocami cantiny tętniły życiem do samego świtu. Miasto, które kiedyś chyliło się ku upadkowi, znów przyciągało handlarzy, podróżników i rewolwerowców. W roku 1900 Tumbleweed stało się więc miastem odrodzonym, żywym dowodem, że nawet na zapomnianych rubieżach można odnaleźć nowe życie. 
+</div>
+
+    <button class="city-btn">RHODES</button>
+    <div class="city-desc">Rhodes - Dziedzictwo Południa.</br></br>
+Rhodes to niewielkie miasteczko w sercu hrabstwa Lemoyne, które do dziś nosi piętno wojny secesyjnej. W latach 60. XIX wieku większość jego mieszkańców poparła sprawę Konfederacji. Po klęsce Południa miasto nigdy w pełni nie podniosło się z ruiny – dawne plantacje uległy zniszczeniu, a wielu weteranów powróciło z frontu bez majątku, z goryczą w sercach. Miasto na rozdrożu Na początku XX wieku Rhodes wydaje się zwykłym, spokojnym miasteczkiem z targiem, kościołem i kilkoma odnowionymi plantacjami. Jednak pod powierzchnią wciąż buzują napięcia: część mieszkańców pragnie budować nowe życie w zgodzie z prawem federalnym, inni pielęgnują pamięć o dawnym porządku i marzą o „odrodzeniu Południa”. Codzienność w cieniu strachu Na co dzień życie toczy się zwyczajnym rytmem – na rynku słychać nawoływania kupców, a w saloonie przy głównym placu zbierają się mieszkańcy, by omawiać nowiny. Jednak każdy wie, że w nocy okolice miasteczka stają się niebezpieczne. Plotki o spotkaniach tajnych bractw, o nieznajomych na drogach i o znikających podróżnych krążą niemal w każdej rozmowie. Rhodes w 1900 roku Miasteczko stoi na granicy dwóch światów: z jednej strony – cywilizacja, handel i powolny rozwój, z drugiej – cień wojny, wrogość i stare urazy, które nigdy nie wygasły. 
+</div>
+
+    <button class="city-btn">ANNESBURG</button>
+    <div class="city-desc">Annesburg – miasto węgla i ciężkiej pracy.</br></br>
+Na północnym wschodzie, nad rzeką Kamassa, leży Annesburg – miasteczko zbudowane na węglu. W 1900 roku życie mieszkańców kręciło się wokół kopalni, gdzie mężczyźni, kobiety i dzieci spędzali długie godziny pod ziemią. Pył, głód i częste wypadki były codziennością. Nieopodal działała też mała kopalnia, która początkowo dawała nadzieję na lepsze warunki, lecz szybko stała się źródłem rywalizacji i konfliktów z potężnymi właścicielami głównych szybów. Annesburg był miejscem ciężkiej pracy i biedy – miastem, do którego rzadko kto przybywał z własnej woli. 
+</div>
+
+    <button class="city-btn">VAN HORN</button>
+    <div class="city-desc">Van Horn – Przekleństwo pogranicza.</br></br>
+W 1900 roku sława tego miejsca była tak ponura, że nawet doświadczeni podróżnicy ostrzegali przed wyruszeniem w jego stronę. Van Horn to miasteczko bez prawa. Szeryf nigdy tu nie zawitał, a wszelka władza spoczywała w rękach bandytów i złodziei, którzy zrobili z ulic przystań dla swoich interesów. Nielegalny handel kwitł na każdym rogu – broń, alkohol, opium i skradzione towary przechodziły z rąk do rąk w dusznych, zadymionych saloonach. Na dokach, gdzie rzeka stykała się z zapadłymi magazynami, można było znaleźć wszystko – od przemytniczych skrzyń po zaginionych ludzi, którzy odważyli się wejść do Van Horn bez eskorty. Nocami rozbrzmiewały tam strzały i pijackie krzyki, a każdy, kto się potknął, ryzykował, że już nigdy nie ujrzy poranka. Mieszkańcy mówili półgłosem, że w Van Horn życie warte jest mniej niż kula. Kupcy i podróżni wiedzieli, że jeśli już muszą tędy przejechać, powinni trzymać się z dala od uliczek, nie patrzeć nikomu w oczy i nie zadawać pytań. Van Horn było więc symbolem upadku – miejscem, gdzie nie rządziło prawo ani sprawiedliwość, lecz chciwość i przemoc. Każdy, kto wyruszał w drogę ku tej osadzie, musiał wiedzieć jedno: to podróż w serce ciemności, z której nie każdy powracał. 
+</div>
+
+
+    <h2 style="margin-top: 30px;">Frakcje</h2>
+
+    <button class="city-btn">KONFEDERACJA</button>
+    <div class="city-desc">Rok 1901 „Nowy początek”</br>
+</div>
+
+    <button class="city-btn">MEKSYKANIE</button>
+    <div class="city-desc">Meksyk – walka Meksykanów o przetrwanie i godność w obliczu uprzedzeń oraz trudnej tułaczki w Ameryce.</br></br>
+      Meksykanie od wielu lat osiedlali się w ameryce podążając za pieniędzmi, sławą czy po prostu żeby uciec z kraju w którym panowały wtedy krwawe rządy Juana Diaza, 
+      aczkolwiek nie każdemu podobała się ich obecność. Ludność meksykańska od początku zamieszkania w Ameryce miała problemy z dostosowaniem się do tamtejszych zasad oraz tradycji, nie pomagało im wtedy nastawienie amerykanów. 
+      Wielu meksykaninów nie pozostawało im dłużni, niektórzy meksykańce jednak próbowali wpłynąć na zdanie amerykanów o nich, aczkolwiek nieważne  co by zrobili dobrego bądź jak bardzo pomagali mieli o nich takie samo zdanie. 
+      Z miesiąca na miesiąc sytuacja coraz bardziej stawała się napięta pomiędzy tymi dwoma ludnościami, meksykanie coraz bardziej byli przyparci do muru szukając jakiejkolwiek drogi ucieczki, niektórzy wrócili inni zostali nie poddając się i stawiając opór amerykanom, 
+      oczywiście nie byli na swojej ziemi więc było im ciężko cokolwiek osiągnąć. W końcu zostali oni zagonieni w zachodnią część stanu Heartland, tam gdzie nie było nic prócz pustkowia, i choroby zwaną cholerą byli zdani sami na siebie. Z tej trudnej sytuacji próbowali znaleźć nutę optymizmu, myśleli, że w końcu uwolnią się od krzywych spojrzeń oraz wyzwisk jak i przemocy ze stronu ludności amerykańskiej, 
+      niestety na ich nieszczęście trafili do miasteczka które dawno temu zostało zapomniane przez boga tak zwanego Armadillo. Ludzie tam cierpieli na śmiertelną chorobę jaką była cholera, również nie pomagał im fakt że tamtejsze strony patrolowało wojsko amerykańskie, lecz oni nie zamierzali się poddać. 
+      Chcieli stworzyć miejsce które znowu mogliby nazwać domem dlatego rozproszyli się na dwa miasta Tumbleweed oraz Armadillo w celu stworzenia nowego lepszego miejsca dla siebie.</div>
+
+    <h2 style="margin-top: 290px;"> Kliknij "ESC" aby zamknąć. </h2>
+  </div>
+    </div>
+
+
+
+
+
+<script>
+const introBtn = document.getElementById("intro-btn");
+const introPanel = document.getElementById("intro-panel");
+const closeIntro = introPanel.querySelector(".close-btn");
+const saloonSound3 = document.getElementById("saloon-sound");
+
+introBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    introPanel.classList.add("active");
+    saloonSound.currentTime = 0; 
+    saloonSound.play();          
+});
+
+closeIntro.addEventListener("click", () => {
+    introPanel.classList.remove("active");
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        introPanel.classList.remove("active");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script>
+  // referencje
+  const saloonSound2   = document.getElementById('saloon-sound');
+  const regBtn        = document.getElementById('regulamin-btn');
+  const loreBtn       = document.getElementById('lore-btn');
+
+  const regPanel      = document.getElementById('side-panel'); 
+  const lorePanel     = document.getElementById('lore-panel');   
+
+  const regCloseBtn   = document.getElementById('close-panel');
+  const loreCloseBtn  = document.getElementById('close-lore'); 
+
+  function playDoor() {
+    if (saloonSound) { saloonSound.currentTime = 0; saloonSound.play().catch(()=>{}); }
+  }
+  function openReg() {
+    lorePanel.classList.remove('open');
+    regPanel.classList.add('open');
+    playDoor();
+  }
+  function openLore() {
+    regPanel.classList.remove('open');
+    lorePanel.classList.add('open');
+    playDoor();
+  }
+  function closeAll() {
+    regPanel.classList.remove('open');
+    lorePanel.classList.remove('open');
+  }
+
+  // kliknięcia w menu
+  if (regBtn)  regBtn.addEventListener('click', e => { e.preventDefault(); openReg(); });
+  if (loreBtn) loreBtn.addEventListener('click', e => { e.preventDefault(); openLore(); });
+
+  if (regCloseBtn)  regCloseBtn.addEventListener('click', closeAll);
+  if (loreCloseBtn) loreCloseBtn.addEventListener('click', closeAll);
+
+  // ESC zamyka wszystko
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+  // akordeon miast
+  document.querySelectorAll('#lore-panel .city-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const desc = btn.nextElementSibling;
+      desc.classList.toggle('active');
+    });
+  });
+</script>
+
+
+
+
+
+
+
+    
+    <!-- Dźwięk saloonu -->
+    <audio id="saloon-sound" src="saloon_doors.mp3" preload="auto"></audio>
+
+    <script>
+        const panel = document.getElementById('side-panel');
+        const openBtn = document.getElementById('regulamin-btn');
+        const closeBtn = document.getElementById('close-panel');
+        const saloonSound = document.getElementById('saloon-sound');
+
+        openBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            panel.classList.add('open');
+            saloonSound.currentTime = 0;
+            saloonSound.play();
+        });
+
+        closeBtn.addEventListener('click', function() {
+            panel.classList.remove('open');
+        });
+
+        document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            panel.classList.remove('open');
+        }
+    });
+    </script>
+
+    <script>
+        var audio = document.getElementById("saloon-sound");
+        audio.volume = 0.2;
+    </script>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="western.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        music.volume = 0.01;
+    
+        document.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            }
+        }, { once: true });
+    </script>
+
+
+
+    <div id="signature">
+        Designed by BIALY
+    </div>
+
+
+    <video autoplay muted loop id="bg-video">
+        <source src="#" type="video/mp4">
+    </video>
+    
+    <style>
+    #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    </style>
+
+
+
+
+<!-- Ekran startowy -->
+<div id="preloader">
+  <div class="start-container">
+    <img src="logo.png" alt="FrontierLife Roleplay Logo" id="logo">
+    <button id="enterBtn">START</button>
+  </div>
+</div>
+
+<script>
+  const preloader = document.getElementById("preloader");
+  const logo = document.getElementById("logo");
+  const button = document.getElementById("enterBtn");
+
+  button.addEventListener("click", () => {
+    // dodaj animację tylko po kliknięciu
+    logo.classList.add("animate-up");
+    button.style.display = "none"; // ukryj przycisk po kliknięciu
+
+    // po zakończeniu animacji schowaj cały ekran
+    setTimeout(() => {
+      preloader.classList.add("hide");
+    }, 3000); // czas animacji w ms
+  });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".scroll-fade");
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 }); // 20% elementu musi być widoczne
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+
+</body>
+</html>
