@@ -37,6 +37,24 @@
     pointer-events: none;
 }
 
+
+a.link{
+    all: unset;
+    color: #ffcc66;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    
+}
+
+a.link:hover{
+    text-shadow: 0 0 5px #ffcc66, 0 0 10px #ffcc66; /* efekt świecenia */
+    color: #ffffff; /* biały tekst przy najechaniu */
+    transform: scale(1.01);
+    padding: 5px 15px;
+}
+
+
 a {
     display: block;
     font-family: 'Rye', cursive;
