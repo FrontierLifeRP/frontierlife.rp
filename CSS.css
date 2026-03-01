@@ -24,7 +24,7 @@
 #main{
     font-family: 'Rye', cursive;
     text-align: center;
-    padding: 10%;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 0.354);
     color: #ffcc66;
     margin: 0;
@@ -467,5 +467,6 @@ p#nagłówki{
         max-height: 6000px;
         padding: 10px 0;
     }
+
 
 
